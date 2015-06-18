@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="HelloAzureAD.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloAzureAD"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <Button Name="HelloAzureAD" Content="Hello Azure AD!" VerticalAlignment="Top" Margin="10" Click="HelloAzureAD_Click"/>
+            <TextBlock Name="lblHelloAADOutput" Text="Click button to authenticate through Azure AD, and retrieve user info." Margin="10" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Page>
