@@ -18,7 +18,7 @@ namespace HelloAzureAD
     public sealed partial class MainPage : Page
     {
         const string aadInstance = "https://login.microsoftonline.com/";
-        const string ResourceId = "https://management.core.windows.net/";
+        const string ResourceId = "https://graph.windows.net/";
         const string tenant = "contoso.onmicrosoft.com";
         const string clientId = "copy-from-Azure-Portal";
         private static AuthenticationContext authContext = null;
@@ -103,8 +103,8 @@ namespace HelloAzureAD
         /// <returns></returns>
         private static async Task<AADUser> GetUserInfo(string tenantId, string userId, string token)
         {
-            //Version 1.5 would be the newest version, but it throws 401s so using older version in meantime
-            string graphRequest = $"https://graph.windows.net/{tenantId}/users/{userId}?api-version=2013-11-08";
+            //Fixed 401 from previous build - newer Graph API in use now
+            string graphRequest = $"https://graph.windows.net/{tenantId}/users/{userId}?api-version=1.6";
             HttpClient client = new HttpClient();
 
             client.DefaultRequestHeaders.Authorization = new Windows.Web.Http.Headers.HttpCredentialsHeaderValue("Bearer", token);
