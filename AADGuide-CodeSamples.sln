@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAzureAD", "HelloAzureAD\HelloAzureAD.csproj", "{BE38C2F2-EB39-4D28-9AE4-53065C25FEC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTreeView", "GraphTreeView\GraphTreeView.csproj", "{85BB5E99-58C0-4CC1-AC58-4CD19BB2CF18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIClientSingleTenant", "WebAPIClientSingleTenant\WebAPIClientSingleTenant.csproj", "{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,26 @@ Global
 		{85BB5E99-58C0-4CC1-AC58-4CD19BB2CF18}.Release|x64.Build.0 = Release|Any CPU
 		{85BB5E99-58C0-4CC1-AC58-4CD19BB2CF18}.Release|x86.ActiveCfg = Release|Any CPU
 		{85BB5E99-58C0-4CC1-AC58-4CD19BB2CF18}.Release|x86.Build.0 = Release|Any CPU
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|ARM.ActiveCfg = Debug|ARM
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|ARM.Build.0 = Debug|ARM
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|ARM.Deploy.0 = Debug|ARM
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|x64.ActiveCfg = Debug|x64
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|x64.Build.0 = Debug|x64
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|x64.Deploy.0 = Debug|x64
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|x86.ActiveCfg = Debug|x86
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|x86.Build.0 = Debug|x86
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Debug|x86.Deploy.0 = Debug|x86
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|Any CPU.ActiveCfg = Release|x86
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|ARM.ActiveCfg = Release|ARM
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|ARM.Build.0 = Release|ARM
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|ARM.Deploy.0 = Release|ARM
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|x64.ActiveCfg = Release|x64
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|x64.Build.0 = Release|x64
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|x64.Deploy.0 = Release|x64
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|x86.ActiveCfg = Release|x86
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|x86.Build.0 = Release|x86
+		{661D8207-2E6F-4CBF-B45C-CD1564BE8D75}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
