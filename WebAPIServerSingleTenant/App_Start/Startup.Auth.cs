@@ -37,7 +37,8 @@ namespace WebAPIServerSingleTenant
                     Tenant = tenant,
                     TokenValidationParameters = new TokenValidationParameters
                     {
-                        ValidAudience = resourceId
+                        ValidAudience = resourceId,
+                        AuthenticationType = "OAuth2Bearer"
                     },
                 });
             #endregion
