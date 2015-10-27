@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIClientSingleTenant", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIServerSingleTenant", "WebAPIServerSingleTenant\WebAPIServerSingleTenant.csproj", "{9BD1711B-8849-4827-9150-1C70BB6615E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B2CVideoPortal", "B2CVideoPortal\B2CVideoPortal.csproj", "{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,22 @@ Global
 		{9BD1711B-8849-4827-9150-1C70BB6615E6}.Release|x64.Build.0 = Release|Any CPU
 		{9BD1711B-8849-4827-9150-1C70BB6615E6}.Release|x86.ActiveCfg = Release|Any CPU
 		{9BD1711B-8849-4827-9150-1C70BB6615E6}.Release|x86.Build.0 = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|x64.Build.0 = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Debug|x86.Build.0 = Debug|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|ARM.Build.0 = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|x64.ActiveCfg = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|x64.Build.0 = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|x86.ActiveCfg = Release|Any CPU
+		{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

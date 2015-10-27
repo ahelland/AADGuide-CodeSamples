@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "AADGuide Video Portal - Index";
+}
+
+<h3 class="ms-font-xl ms-fontWeight-light">
+    AADGuide Video Portal
+</h3>
+
+@if (!Request.IsAuthenticated)
+{
+    <div class="row">
+        <h4 class="ms-font-m ms-fontWeight-regular">
+            Please sign in with your account to access the contents of this site.<br />
+            If you do not have an account go through the creation of one by clicking the "Sign Up" link.
+        </h4>
+    </div>
+}
+
+@if (Request.IsAuthenticated)
+{
+    <div class="ChannelList-item">
+        <h3 class="ChannelList-title" style="border-color: #dc0606">
+            <span class="ChannelList-titleText ms-font-xl">New videos<br /></span>
+            <span class="ms-font-l ms-fontColor-themePrimary ms-fontColor-themeDark-hover">See all videos</span>
+        </h3>
+        <div class="ChannelList-videos ms-Grid">
+            <div class="ms-Grid-row">
+                <div class="VideoList-item ms-Grid-col ms-Grid ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-xl3">
+                    <div class="ms-Grid-row">
+                        <div class="VideoList-thumb ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <img class="VideoList-thumbImg" src="http://lorempixel.com/300/168/nightlife/1" alt="Lining up the drinks for the evening">
+                            <span class="VideoList-thumbCaption">5:55</span>
+                        </div>
+                        <div class="VideoList-text ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <span class="VideoList-title ms-font-m-plus" title="Lining up the drinks for the evening">Lining up the drinks for the evening</span>
+                            <span class="VideoList-viewCount ms-font-s-plus ms-fontColor-neutralSecondaryAlt">123 views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="VideoList-item ms-Grid-col ms-Grid ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-xl3">
+                    <div class="ms-Grid-row">
+                        <div class="VideoList-thumb ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <img class="VideoList-thumbImg" src="http://lorempixel.com/300/168/nightlife/2" alt="Last Christmas">
+                            <span class="VideoList-thumbCaption">5:55</span>
+                        </div>
+                        <div class="VideoList-text ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <span class="VideoList-title ms-font-m-plus" title="Last Christmas">Last Christmas</span>
+                            <span class="VideoList-viewCount ms-font-s-plus ms-fontColor-neutralSecondaryAlt">231 views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="VideoList-item ms-Grid-col ms-Grid ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-xl3">
+                    <div class="ms-Grid-row">
+                        <div class="VideoList-thumb ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <img class="VideoList-thumbImg" src="http://lorempixel.com/300/168/food/4" alt="Not a bad little dish">
+                            <span class="VideoList-thumbCaption">5:55</span>
+                        </div>
+                        <div class="VideoList-text ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <span class="VideoList-title ms-font-m-plus" title="Not a bad little dish">Not a bad little dish</span>
+                            <span class="VideoList-viewCount ms-font-s-plus ms-fontColor-neutralSecondaryAlt">321 views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="VideoList-item ms-Grid-col ms-Grid ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-xl3">
+                    <div class="ms-Grid-row">
+                        <div class="VideoList-thumb ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <img class="VideoList-thumbImg" src="http://lorempixel.com/300/168/sports/3" alt="Taking the old bicycle for a quick spin">
+                            <span class="VideoList-thumbCaption">5:55</span>
+                        </div>
+                        <div class="VideoList-text ms-Grid-col ms-u-sm12 ms-u-lg12">
+                            <span class="VideoList-title ms-font-m-plus" title="Taking the old bicycle for a quick spin">Taking the old bicycle for a quick spin</span>
+                            <span class="VideoList-viewCount ms-font-s-plus ms-fontColor-neutralSecondaryAlt">312 views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

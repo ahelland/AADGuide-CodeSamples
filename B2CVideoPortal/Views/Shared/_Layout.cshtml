@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - AADGuide Video Portal</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Fabric core and Components CSS -->
+    <link rel="stylesheet" type="text/css" href="~/css/fabric.css">
+    <link rel="stylesheet" type="text/css" href="~/css/fabric.components.css">
+    <meta name="description" content="A sample portal for videos" />
+</head>
+<body>
+    <div class="MyTube-Portal">
+        <div class="MyTube-content">
+            <!-- Host for NavBar component -->
+            <div class="MyTube-navBar">
+                <!-- Fabric NavBar component -->
+                <div class="ms-NavBar">
+                    <div class="ms-NavBar-openMenu js-openMenu">
+                        <i class="ms-Icon ms-Icon--menu"></i>
+                    </div>
+                    <ul class="ms-NavBar-items">
+                        <li class="ms-NavBar-item ms-NavBar-item--search ms-u-hiddenSm">
+                            <div class="ms-TextField">
+                                <input class="ms-TextField-field">
+                            </div>
+                        </li>
+                        <li class="ms-NavBar-item is-selected"><a class="ms-NavBar-link" href="/Home/Index">Home</a></li>
+                        @if (Request.IsAuthenticated)
+                        {
+                            <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#">All Videos</a></li>
+                            <li class="ms-NavBar-item ms-NavBar-item--hasMenu">
+                                <a class="ms-NavBar-link" href="#">By Year</a>
+                                <i class="ms-NavBar-chevronDown ms-Icon ms-Icon--chevronDown"></i>
+                                <ul class="ms-ContextualMenu">
+                                    <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">2015</a></li>
+                                    <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">2014</a></li>
+                                    <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">2013</a></li>
+                                </ul>
+                            </li>
+                            <li class="ms-NavBar-item">@Html.ActionLink("Claims", "Claims", "Home", routeValues: null, htmlAttributes: new { @class = "ms-NavBar-link" }) </li>
+                        }
+                        @Html.Partial("_LoginPartial")
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="ms-font-mi">
+            <p>&copy; @DateTime.Now.Year - AADGuide</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <!-- Fabric jQuery plugin for NavBar component -->
+    <script src="../../components/NavBar/Jquery.Navbar.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check to make sure the NavBar plugin is available, then run it
+            if ($.fn.NavBar) {
+                $('.ms-NavBar').NavBar();
+            }
+        });
+    </script>
+</body>
+</html>

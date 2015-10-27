@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4CDB4BD-82D6-4AB2-AE33-6DDAFBD7EDE1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>B2CVideoPortal</RootNamespace>
+    <AssemblyName>B2CVideoPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44310</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.Protocol.Extensions, Version=1.0.2.33, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocol.Extensions.1.0.2.206221351\lib\net45\Microsoft.IdentityModel.Protocol.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OpenIdConnect, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OpenIdConnect.3.0.1\lib\net45\Microsoft.Owin.Security.OpenIdConnect.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.20622.1351, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.4.0.2.206221351\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PolicyAuthHelpers\HttpDocumentRetriever.cs" />
+    <Compile Include="PolicyAuthHelpers\PolicyAuthorize.cs" />
+    <Compile Include="PolicyAuthHelpers\PolicyConfigurationManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="components\Breadcrumb\Breadcrumb.html" />
+    <Content Include="components\Button\Button.Command.html" />
+    <Content Include="components\Button\Button.Compound.html" />
+    <Content Include="components\Button\Button.Hero.html" />
+    <Content Include="components\Button\Button.html" />
+    <Content Include="components\Button\Button.Primary.html" />
+    <Content Include="components\Callout\Callout.ActionText.html" />
+    <Content Include="components\Callout\Callout.Close.html" />
+    <Content Include="components\Callout\Callout.html" />
+    <Content Include="components\Callout\Callout.Oobe.html" />
+    <Content Include="components\Callout\Callout.Peek.html" />
+    <Content Include="components\ChoiceField\ChoiceField.Checkbox.Disabled.html" />
+    <Content Include="components\ChoiceField\ChoiceField.Checkbox.html" />
+    <Content Include="components\ChoiceField\ChoiceField.Checkbox.Selected.html" />
+    <Content Include="components\ChoiceField\ChoiceField.ChoiceFieldGroup.html" />
+    <Content Include="components\ChoiceField\ChoiceField.Disabled.html" />
+    <Content Include="components\ChoiceField\ChoiceField.html" />
+    <Content Include="components\ChoiceField\ChoiceField.Selected.html" />
+    <Content Include="components\CommandBar\CommandBar.html" />
+    <Content Include="components\CommandBar\Jquery.CommandBar.js" />
+    <Content Include="components\ContextualMenu\ContextualMenu.Dividers.html" />
+    <Content Include="components\ContextualMenu\ContextualMenu.html" />
+    <Content Include="components\ContextualMenu\ContextualMenu.Multiselect.html" />
+    <Content Include="components\ContextualMenu\ContextualMenu.SubMenu.html" />
+    <Content Include="components\ContextualMenu\Jquery.ContextualMenu.js" />
+    <Content Include="components\DatePicker\DatePicker.html" />
+    <Content Include="components\DatePicker\Jquery.DatePicker.js" />
+    <Content Include="components\DatePicker\PickaDate.js" />
+    <Content Include="components\Dialog\Dialog.Close.html" />
+    <Content Include="components\Dialog\Dialog.html" />
+    <Content Include="components\Dialog\Dialog.LgHeader.html" />
+    <Content Include="components\Dialog\Dialog.Multiline.html" />
+    <Content Include="components\Dropdown\Dropdown.Disabled.html" />
+    <Content Include="components\Dropdown\Dropdown.html" />
+    <Content Include="components\Dropdown\Jquery.Dropdown.js" />
+    <Content Include="components\Label\Label.Disabled.html" />
+    <Content Include="components\Label\Label.html" />
+    <Content Include="components\Label\Label.Required.html" />
+    <Content Include="components\Link\Link.Hero.html" />
+    <Content Include="components\Link\Link.html" />
+    <Content Include="components\ListItem\Jquery.ListItem.js" />
+    <Content Include="components\ListItem\ListItem.Document.html" />
+    <Content Include="components\ListItem\ListItem.html" />
+    <Content Include="components\ListItem\ListItem.Image.html" />
+    <Content Include="components\ListItem\ListItem.Selectable.html" />
+    <Content Include="components\ListItem\ListItem.Selected.html" />
+    <Content Include="components\ListItem\ListItem.Unread.html" />
+    <Content Include="components\ListItem\ListItem.Unseen.html" />
+    <Content Include="components\List\List.Grid.html" />
+    <Content Include="components\List\List.html" />
+    <Content Include="components\NavBar\Jquery.NavBar.js" />
+    <Content Include="components\NavBar\NavBar.html" />
+    <Content Include="components\OrgChart\OrgChart.html" />
+    <Content Include="components\OrgChart\OrgChart.Square.html" />
+    <Content Include="components\Overlay\Overlay.Dark.html" />
+    <Content Include="components\Overlay\Overlay.html" />
+    <Content Include="components\Overlay\Overlay.None.html" />
+    <Content Include="components\Panel\Jquery.Panel.js" />
+    <Content Include="components\Panel\Panel.ExtraLarge.html" />
+    <Content Include="components\Panel\Panel.html" />
+    <Content Include="components\Panel\Panel.Large.html" />
+    <Content Include="components\Panel\Panel.Medium.html" />
+    <Content Include="components\PeoplePicker\Jquery.PeoplePicker.js" />
+    <Content Include="components\PeoplePicker\PeoplePicker.Compact.html" />
+    <Content Include="components\PeoplePicker\PeoplePicker.Disconnected.html" />
+    <Content Include="components\PeoplePicker\PeoplePicker.FacePile.html" />
+    <Content Include="components\PeoplePicker\PeoplePicker.html" />
+    <Content Include="components\PeoplePicker\PeoplePicker.Searching.png" />
+    <Content Include="components\PersonaCard\Jquery.PersonaCard.js" />
+    <Content Include="components\PersonaCard\PersonaCard.html" />
+    <Content Include="components\PersonaCard\PersonaCard.Square.html" />
+    <Content Include="components\Persona\Persona.ExtraLarge.html" />
+    <Content Include="components\Persona\Persona.ExtraSmall.html" />
+    <Content Include="components\Persona\Persona.html" />
+    <Content Include="components\Persona\Persona.Large.html" />
+    <Content Include="components\Persona\Persona.Person.jpg" />
+    <Content Include="components\Persona\Persona.Person2.png" />
+    <Content Include="components\Persona\Persona.Presence.Available.html" />
+    <Content Include="components\Persona\Persona.Presence.Away.html" />
+    <Content Include="components\Persona\Persona.Presence.Blocked.html" />
+    <Content Include="components\Persona\Persona.Presence.Busy.html" />
+    <Content Include="components\Persona\Persona.Presence.Dnd.html" />
+    <Content Include="components\Persona\Persona.Presence.Offline.html" />
+    <Content Include="components\Persona\Persona.Presence.Square.Available.html" />
+    <Content Include="components\Persona\Persona.Presence.Square.Away.html" />
+    <Content Include="components\Persona\Persona.Presence.Square.Blocked.html" />
+    <Content Include="components\Persona\Persona.Presence.Square.Busy.html" />
+    <Content Include="components\Persona\Persona.Presence.Square.Dnd.html" />
+    <Content Include="components\Persona\Persona.Presence.Square.Offline.html" />
+    <Content Include="components\Persona\Persona.Small.html" />
+    <Content Include="components\Persona\Persona.Square.ExtraLarge.html" />
+    <Content Include="components\Persona\Persona.Square.ExtraSmall.html" />
+    <Content Include="components\Persona\Persona.Square.html" />
+    <Content Include="components\Persona\Persona.Square.Large.html" />
+    <Content Include="components\Persona\Persona.Square.Small.html" />
+    <Content Include="components\Persona\Persona.Square.Tiny.html" />
+    <Content Include="components\Persona\Persona.Tiny.html" />
+    <Content Include="components\Pivot\jquery.Pivot.js" />
+    <Content Include="components\Pivot\Pivot.html" />
+    <Content Include="components\Pivot\Pivot.Large.html" />
+    <Content Include="components\Pivot\Pivot.Tabs.html" />
+    <Content Include="components\Pivot\Pivot.Tabs.Large.html" />
+    <Content Include="components\ProgressIndicator\ProgressIndicator.html" />
+    <Content Include="components\ProgressIndicator\ProgressIndicator.js" />
+    <Content Include="components\SearchBox\Jquery.SearchBox.js" />
+    <Content Include="components\SearchBox\SearchBox.html" />
+    <Content Include="components\Spinner\Spinner.html" />
+    <Content Include="components\Spinner\Spinner.js" />
+    <Content Include="components\Table\Table.html" />
+    <Content Include="components\TextField\Jquery.TextField.js" />
+    <Content Include="components\TextField\TextField.html" />
+    <Content Include="components\TextField\TextField.Multiline.html" />
+    <Content Include="components\TextField\TextField.Placeholder.html" />
+    <Content Include="components\TextField\TextField.Underlined.html" />
+    <Content Include="components\Toggle\Toggle.html" />
+    <Content Include="components\Toggle\Toggle.TextLeft.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\fabric.components.css" />
+    <Content Include="css\fabric.components.min.css" />
+    <Content Include="css\fabric.components.rtl.css" />
+    <Content Include="css\fabric.components.rtl.min.css" />
+    <Content Include="css\fabric.css" />
+    <Content Include="css\fabric.min.css" />
+    <Content Include="css\fabric.rtl.css" />
+    <Content Include="css\fabric.rtl.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="less\_Office.Color.Variables.less" />
+    <Content Include="less\_Office.Color.Mixins.less" />
+    <Content Include="less\_Fabric.ZIndex.Variables.less" />
+    <Content Include="less\_Fabric.Utilities.less" />
+    <Content Include="less\_Fabric.Typography.Variables.less" />
+    <Content Include="less\_Fabric.Typography.less" />
+    <Content Include="less\_Fabric.Typography.Languageoverrides.less" />
+    <Content Include="less\_Fabric.Typography.Fonts.less" />
+    <Content Include="less\_Fabric.Responsive.Variables.less" />
+    <Content Include="less\_Fabric.Responsive.Utilities.less" />
+    <Content Include="less\_Fabric.Mixins.less" />
+    <Content Include="less\_Fabric.Icons.RTL.less" />
+    <Content Include="less\_Fabric.Icons.less" />
+    <Content Include="less\_Fabric.Icons.Font.less" />
+    <Content Include="less\_Fabric.Grid.less" />
+    <Content Include="less\_Fabric.Color.Variables.less" />
+    <Content Include="less\_Fabric.Color.Mixins.less" />
+    <Content Include="less\_Fabric.Animations.RTL.less" />
+    <Content Include="less\_Fabric.Animations.less" />
+    <Content Include="less\Fabric.RTL.less" />
+    <Content Include="less\Fabric.less" />
+    <Content Include="less\Fabric.Components.less" />
+    <Content Include="components\Toggle\Toggle.less" />
+    <Content Include="components\Toggle\Toggle.json" />
+    <Content Include="components\TextField\TextField.less" />
+    <Content Include="components\TextField\TextField.json" />
+    <Content Include="components\Table\Table.less" />
+    <Content Include="components\Table\Table.json" />
+    <Content Include="components\Spinner\Spinner.less" />
+    <Content Include="components\Spinner\Spinner.json" />
+    <Content Include="components\SearchBox\SearchBox.less" />
+    <Content Include="components\SearchBox\SearchBox.json" />
+    <Content Include="components\ProgressIndicator\ProgressIndicator.less" />
+    <Content Include="components\ProgressIndicator\ProgressIndicator.json" />
+    <Content Include="components\Pivot\Pivot.less" />
+    <Content Include="components\Pivot\Pivot.json" />
+    <Content Include="components\Persona\Persona.less" />
+    <Content Include="components\Persona\Persona.json" />
+    <Content Include="components\PersonaCard\PersonaCard.less" />
+    <Content Include="components\PersonaCard\PersonaCard.json" />
+    <Content Include="components\PeoplePicker\PeoplePicker.less" />
+    <Content Include="components\PeoplePicker\PeoplePicker.json" />
+    <Content Include="components\Panel\Panel.less" />
+    <Content Include="components\Panel\Panel.json" />
+    <Content Include="components\Overlay\Overlay.less" />
+    <Content Include="components\Overlay\Overlay.json" />
+    <Content Include="components\OrgChart\OrgChart.less" />
+    <Content Include="components\OrgChart\OrgChart.json" />
+    <Content Include="components\NavBar\NavBar.less" />
+    <Content Include="components\NavBar\NavBar.json" />
+    <Content Include="components\List\List.less" />
+    <Content Include="components\List\List.json" />
+    <Content Include="components\ListItem\ListItem.less" />
+    <Content Include="components\ListItem\ListItem.json" />
+    <Content Include="components\Link\Link.less" />
+    <Content Include="components\Link\Link.json" />
+    <Content Include="components\Label\Label.less" />
+    <Content Include="components\Label\Label.json" />
+    <Content Include="components\Dropdown\Dropdown.less" />
+    <Content Include="components\Dropdown\Dropdown.json" />
+    <Content Include="components\Dialog\Dialog.less" />
+    <Content Include="components\Dialog\Dialog.json" />
+    <Content Include="components\DatePicker\DatePicker.less" />
+    <Content Include="components\DatePicker\DatePicker.json" />
+    <Content Include="components\ContextualMenu\ContextualMenu.less" />
+    <Content Include="components\ContextualMenu\ContextualMenu.json" />
+    <Content Include="components\CommandBar\CommandBar.less" />
+    <Content Include="components\CommandBar\CommandBar.json" />
+    <Content Include="components\ChoiceField\ChoiceField.less" />
+    <Content Include="components\ChoiceField\ChoiceField.json" />
+    <Content Include="components\Callout\Callout.less" />
+    <Content Include="components\Callout\Callout.json" />
+    <Content Include="components\Button\Button.less" />
+    <Content Include="components\Button\Button.json" />
+    <Content Include="components\Breadcrumb\Breadcrumb.less" />
+    <Content Include="components\Breadcrumb\Breadcrumb.json" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Scripts\jquery.fabric.js" />
+    <Content Include="Scripts\jquery.fabric.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Claims.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13243</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44310/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
