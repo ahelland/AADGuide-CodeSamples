@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - AADGuide Claims Demo</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Fabric core and Components CSS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/fabric.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/fabric.components.min.css">
+    <meta name="description" content="A claims web app" />
+</head>
+<body>
+    <div class="MyTube-Portal">
+        <div class="Claims-content">
+            <!-- Host for NavBar component -->
+            <div class="Claims-navBar">
+                <!-- Fabric NavBar component -->
+                <div class="ms-NavBar">
+                    <div class="ms-NavBar-openMenu js-openMenu">
+                        <i class="ms-Icon ms-Icon--menu"></i>
+                    </div>
+                    <ul class="ms-NavBar-items">                        
+                        <li class="ms-NavBar-item is-selected"><a class="ms-NavBar-link" href="/Home/Index">Home</a></li>
+                        @if (Request.IsAuthenticated)
+                        {
+                            <li class="ms-NavBar-item">@Html.ActionLink("Add Claim", "AddClaim", "Home", routeValues: null, htmlAttributes: new { @class = "ms-NavBar-link" }) </li>
+                            <li class="ms-NavBar-item">@Html.ActionLink("Claims", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "ms-NavBar-link" }) </li>
+                        }
+                        @Html.Partial("_LoginPartial")
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="ms-font-mi">
+            <p>&copy; @DateTime.Now.Year - AADGuide</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <!-- Fabric jQuery plugin for NavBar component -->
+    <script src="../../components/NavBar/Jquery.Navbar.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check to make sure the NavBar plugin is available, then run it
+            if ($.fn.NavBar) {
+                $('.ms-NavBar').NavBar();
+            }
+        });
+    </script>
+</body>
+</html>
+

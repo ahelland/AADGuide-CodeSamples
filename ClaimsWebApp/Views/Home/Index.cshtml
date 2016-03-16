@@ -1,0 +1,44 @@
+﻿@using System.Security.Claims
+@{
+    ViewBag.Title = "AADGuide Claims";
+}
+
+<h3 class="ms-font-xl ms-fontWeight-light">
+    AADGuide Claims
+</h3>
+
+@if (!Request.IsAuthenticated)
+{
+    <div class="row">
+        <h4 class="ms-font-m ms-fontWeight-regular">
+            Please sign in with your account to access the contents of this site.<br />
+            If you do not have an account go through the creation of one by clicking the "Sign Up" link.
+        </h4>
+    </div>
+}
+
+@if (Request.IsAuthenticated)
+{
+    if (User.IsInRole("Admin"))
+    {
+        <h1>You are in the admin group</h1>
+    }
+
+    <h4>Claims Present in the Claims Identity: @ViewBag.DisplayName</h4>
+
+    <table class="table-hover claim-table">
+        <tr>
+            <th class="claim-type claim-data claim-head">Claim Type</th>
+            <th class="claim-data claim-head">Claim Value</th>
+        </tr>
+
+        @foreach (Claim claim in ClaimsPrincipal.Current.Claims)
+        {
+            <tr>
+                <td class="claim-type claim-data">@claim.Type</td>
+                <td class="claim-data">@claim.Value</td>
+            </tr>
+        }
+    </table>
+}
+
