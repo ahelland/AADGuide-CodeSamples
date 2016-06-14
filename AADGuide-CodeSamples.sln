@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAzureAD", "HelloAzureAD\HelloAzureAD.csproj", "{BE38C2F2-EB39-4D28-9AE4-53065C25FEC9}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADFSWebAPIClient", "ADFSWebAPIClient\ADFSWebAPIClient.csproj", "{6AE72A32-A6EB-482D-AF1C-177CF4E1469C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsWebApp", "ClaimsWebApp\ClaimsWebApp.csproj", "{82E18722-5D74-42D8-B9AF-0AE359B754AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtCracker", "JwtCracker\JwtCracker.csproj", "{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,22 @@ Global
 		{82E18722-5D74-42D8-B9AF-0AE359B754AE}.Release|x64.Build.0 = Release|Any CPU
 		{82E18722-5D74-42D8-B9AF-0AE359B754AE}.Release|x86.ActiveCfg = Release|Any CPU
 		{82E18722-5D74-42D8-B9AF-0AE359B754AE}.Release|x86.Build.0 = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|ARM.Build.0 = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|x64.Build.0 = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Debug|x86.Build.0 = Debug|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|ARM.ActiveCfg = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|ARM.Build.0 = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|x64.ActiveCfg = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|x64.Build.0 = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|x86.ActiveCfg = Release|Any CPU
+		{713BE6F5-EFF8-4A5B-8FBC-EC29D4616660}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

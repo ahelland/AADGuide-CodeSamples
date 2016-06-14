@@ -188,3 +188,7 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/.vs/config/applicationhost.config
+/ADFSWebAPIClient/project.lock.json
+/HelloAzureAD/project.lock.json
+/WebAPIClientSingleTenant/project.lock.json
