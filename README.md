@@ -9,7 +9,7 @@ GitHub: [https://github.com/ahelland/AADGuide](https://github.com/ahelland/AADGu
 ### Projects in this solution  
 
 #### AboutMePasswordGrant
-Platform: .NET 4.6.1
+Platform: .NET 4.6.1  
 Demo Windows Forms app implementing the password grant OAuth flow. No libraries involved, just plain http calls.
 
 #### ADFSWebAPIClient 
