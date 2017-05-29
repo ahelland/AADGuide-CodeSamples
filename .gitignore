@@ -192,3 +192,5 @@ ModelManifest.xml
 /ADFSWebAPIClient/project.lock.json
 /HelloAzureAD/project.lock.json
 /WebAPIClientSingleTenant/project.lock.json
+*.sqlite
+/.vs/VSWorkspaceState.json

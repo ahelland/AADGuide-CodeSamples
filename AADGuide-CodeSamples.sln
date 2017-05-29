@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAzureAD", "HelloAzureAD\HelloAzureAD.csproj", "{BE38C2F2-EB39-4D28-9AE4-53065C25FEC9}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebAPIClient", "CoreWebAPIClient\CoreWebAPIClient.csproj", "{28186B2B-D107-44E8-9088-FFA24347C6CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutMePasswordGrant", "AboutMePasswordGrant\AboutMePasswordGrant.csproj", "{E095B452-C29D-4C29-8FEE-6BFC3E1689C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAADB2C", "HelloAADB2C\HelloAADB2C.csproj", "{F3E4C848-4296-44B5-B889-2DF107598738}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -247,6 +249,26 @@ Global
 		{E095B452-C29D-4C29-8FEE-6BFC3E1689C7}.Release|x64.Build.0 = Release|Any CPU
 		{E095B452-C29D-4C29-8FEE-6BFC3E1689C7}.Release|x86.ActiveCfg = Release|Any CPU
 		{E095B452-C29D-4C29-8FEE-6BFC3E1689C7}.Release|x86.Build.0 = Release|Any CPU
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|ARM.Build.0 = Debug|ARM
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|ARM.Deploy.0 = Debug|ARM
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|x64.ActiveCfg = Debug|x64
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|x64.Build.0 = Debug|x64
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|x64.Deploy.0 = Debug|x64
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|x86.ActiveCfg = Debug|x86
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|x86.Build.0 = Debug|x86
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Debug|x86.Deploy.0 = Debug|x86
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|Any CPU.ActiveCfg = Release|x86
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|ARM.ActiveCfg = Release|ARM
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|ARM.Build.0 = Release|ARM
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|ARM.Deploy.0 = Release|ARM
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|x64.ActiveCfg = Release|x64
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|x64.Build.0 = Release|x64
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|x64.Deploy.0 = Release|x64
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|x86.ActiveCfg = Release|x86
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|x86.Build.0 = Release|x86
+		{F3E4C848-4296-44B5-B889-2DF107598738}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
