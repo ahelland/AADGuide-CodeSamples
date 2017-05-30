@@ -33,13 +33,17 @@ Platform: Universal Windows Platform (Min 10240)
 App demoing how to acquire a token from the Azure AD v2 endpoint using Microsoft Authentication Library (MSAL). Subsequently calls into the API in CoreWebAPIServer. 
 
 #### CoreWebAPIServer 
-Platform> .NET Core 1.0
+Platform: .NET Core 1.0
 Demo web API protected by Azure AD using .NET Core. Accepts token issued by the Azure AD v2 endpoint.
  
 #### GraphTreeView 
 Platform: Windows Forms App  
 App for getting info from an AAD tenant using the Graph API.
  
+#### HelloAADB2C
+Platform: Universal Windows Platform (Min 10586)  
+App that shows how to authenticate a user against an Azure Active Directory B2C tenant using custom policies. The custom policy is set up to support both social identities (Facebook) and corporate identities (Azure AD).
+
 #### HelloAzureAD 
 Platform: Universal Windows Platform (Min 10240)  
 App that shows how to authenticate a user against an Azure Active Directory tenant. Subsequently the acquired token is used to execute a query against the Graph API to extract the user object.
