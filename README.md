@@ -8,9 +8,9 @@ GitHub: [https://github.com/ahelland/AADGuide](https://github.com/ahelland/AADGu
 
 ### Projects in this solution  
 
-#### AboutMePasswordGrant
-Platform: .NET 4.6.1  
-Demo Windows Forms app implementing the password grant OAuth flow. No libraries involved, just plain http calls.
+#### ADFSTodoSPA
+Platform: .NET Core 2 and Angular  
+SinglePageApp (SPA) based on .NET Core on the back-end, and Angular on the front-end. Uses ADAL JS for auth with ADFS.
 
 #### ADFSWebAPIClient 
 Platform: Universal Windows Platform (Min 10240)  
@@ -19,7 +19,11 @@ Client for calling into a Web API protected by ADFS 2016.
 #### ADFSWebAPIServer 
 Platform: .NET 4.6.1  
 Demo Web API protected by ADFS 2016.
- 
+
+#### AboutMePasswordGrant
+Platform: .NET 4.6.1  
+Demo Windows Forms app implementing the password grant OAuth flow. No libraries involved, just plain http calls.
+
 #### B2CVideoPortal
 Platform: .NET 4.6  
 Demo portal for the Azure AD B2C feature. Users login with social identity providers. Theming of site uses Office 365 UI Fabric. 
