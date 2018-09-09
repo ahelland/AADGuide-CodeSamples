@@ -195,3 +195,7 @@ ModelManifest.xml
 /WebAPIClientSingleTenant/project.lock.json
 *.sqlite
 /.vs/VSWorkspaceState.json
+/.vs/AADGuide-CodeSamples/DesignTimeBuild/.dtbcache
+/.vs/AADGuide-CodeSamples/v15/Server/sqlite3/db.lock
+/.vs/AADGuide-CodeSamples/v15/Server/sqlite3/storage.ide-shm
+/.vs/AADGuide-CodeSamples/v15/Server/sqlite3/storage.ide-wal

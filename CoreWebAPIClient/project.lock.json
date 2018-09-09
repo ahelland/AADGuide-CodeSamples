@@ -15740,8 +15740,8 @@
       }
     },
     "dependencies": {
-      "Microsoft.Identity.Client": "1.0.304142221-alpha",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+      "Microsoft.Identity.Client": "[1.0.304142221-alpha, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[5.1.0, )"
     },
     "frameworks": {
       "uap10.0.10240": {}
