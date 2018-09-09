@@ -24,6 +24,10 @@ Demo Web API protected by ADFS 2016.
 Platform: .NET 4.6.1  
 Demo Windows Forms app implementing the password grant OAuth flow. No libraries involved, just plain http calls.
 
+#### B2CNETCoreWebApp
+Platform: .NET Core 2.1
+Demo web app showing how to implement multiple identity providers by using Azure AD B2C. Also implements authorization based on a role claim in the token acquired from AAD B2C.
+
 #### B2CVideoPortal
 Platform: .NET 4.6  
 Demo portal for the Azure AD B2C feature. Users login with social identity providers. Theming of site uses Office 365 UI Fabric. 
