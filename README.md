@@ -41,11 +41,11 @@ Platform: Universal Windows Platform (Min 10240)
 App demoing how to acquire a token from the Azure AD v2 endpoint using Microsoft Authentication Library (MSAL). Subsequently calls into the API in CoreWebAPIServer. 
 
 #### CoreWebAPIServer 
-Platform: .NET Core 1.0
+Platform: .NET Core 1.0  
 Demo web API protected by Azure AD using .NET Core. Accepts token issued by the Azure AD v2 endpoint.
 
 #### CoreWebAPISignedJWTs
-Platform: .NET Core 2.2
+Platform: .NET Core 2.2  
 Web API requiring signed JWTs/certificate-based authentication.
 
 #### GraphTreeView 
