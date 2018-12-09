@@ -43,7 +43,11 @@ App demoing how to acquire a token from the Azure AD v2 endpoint using Microsoft
 #### CoreWebAPIServer 
 Platform: .NET Core 1.0
 Demo web API protected by Azure AD using .NET Core. Accepts token issued by the Azure AD v2 endpoint.
- 
+
+#### CoreWebAPISignedJWTs
+Platform: .NET Core 2.2
+Web API requiring signed JWTs/certificate-based authentication.
+
 #### GraphTreeView 
 Platform: Windows Forms App  
 App for getting info from an AAD tenant using the Graph API.
