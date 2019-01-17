@@ -45,7 +45,10 @@ namespace JwtCracker
                 var jwtPayload = "{";
                 foreach (Claim c in claims)
                 {
-                    jwtPayload += '"' + c.Type + "\":\"" + c.Value + "\",";
+                    if (c.Value.StartsWith("{"))
+                        jwtPayload += '"' + c.Type + "\":" + c.Value + ",";
+                    else
+                        jwtPayload += '"' + c.Type + "\":\"" + c.Value + "\",";
                 }
                 jwtPayload += "}";
                 txtJwtOut.Text += "\r\nPayload:\r\n" + JToken.Parse(jwtPayload).ToString(Formatting.Indented);
